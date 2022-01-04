@@ -1,0 +1,67 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pythonservice2
+spec:
+  selector:
+    app: pythonweb2
+  ports:
+  - protocol: TCP
+    port: 8084
+    targetPort: 8000
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pythonweb2
+  labels:
+    app: pythonweb2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pythonweb2
+  template:
+    metadata:
+      labels:
+        app: pythonweb2
+    spec:
+      volumes:
+      - name: data
+        emptyDir: {}
+      containers:
+      - name: run
+        image: python:3.8-slim-buster
+        imagePullPolicy: IfNotPresent
+        tty: true
+        command: ["sh", "-c"]
+        args: 
+        - echo Start1;
+          cd /app;
+          python server.py
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8000
+          periodSeconds: 10
+          initialDelaySeconds: 3
+        volumeMounts:
+        - name: data
+          mountPath: /app
+      # These containers are run during pod initialization
+      initContainers:
+      - name: downloadcode
+        image: bitnami/git:2.34.1
+        imagePullPolicy: IfNotPresent
+        command: ["sh", "-c"]
+        args: 
+        - echo Start;
+          mkdir /apptmp;
+          cd /apptmp;
+          git clone https://github.com/sbraer/k8sdeploy.git;
+          cd k8sdeploy/mypython;
+          cp -Rf . /app;
+        volumeMounts:
+        - name: data
+          mountPath: /app

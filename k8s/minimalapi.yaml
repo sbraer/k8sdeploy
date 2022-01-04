@@ -1,0 +1,106 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: keyforgit
+type: Opaque
+data:
+  id_rsa: LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUNGd0FBQUFkemMyZ3RjbgpOaEFBQUFBd0VBQVFBQUFnRUF4UUpLbGJGWEZUVGtlcHlYOURqNGJyK3pqU05vRXNuS21OZ0xVUVVHMkdieEprM3lqNWliCmd2bEtrRUFsLzVYUDZCaWlnazVrTXF3ZHVMWnpsUEh1eXdnK295SjNlckJrSTVwbmtUVlNJbGo2MUxNL1UzSmdDblRvZ3kKQ3NmZStRS2grUlhvSXBHOW1HSlV5OVFnWi9BRkFxL3M1VkFNRWZ5QTkrQVNHbmZLd2YxSUZLWk9GdTgvei9NRkJDOTJOSwpERUVSZk82Z3ZZVnUwNVJJbVprM1dGTDROUnBSWSswU08zellhMGdoa1VMMlcwWnFWYXhacHVZaWw4QnlIdGxjejY0dzJzCnRtaGZ4OFJRZkRoS3YvZzVDdXpycVplOVBsRUduRmtuZzB5Y2piK3I5STBGNkNKaEFyUUxyMy9nemFKaThESkRPdDZZTSsKQmp5S0VmbTg4RkhoNmVESlRQZERJanpsQ1IzbUF5ODY4VHJ1VGZmSEJWL2xHTEhpZGhsTFpNUFlaVHVMakNoSUlvaFg3YwpPRTg3NXlna0JrWGJwTW9UMHo4dWd3eUVKc1l3TG0yem9RenE5TlMwa3BhSEFtaisvckc0OFRCMFhoNFRsSWdPS0IwNkM2CmpYMWJXUjdlMGhnQjc1S3hmRkZLNGoyMS9zb0JZdDVGVjZROW9yYlV5MjVaRFlEenl2L2RJQTNZd0NKRDg5UVFzTDZVSkgKWC8xZytTUittb0xoNU9QdkZ6WGlBTExLNEZzeDFkNFBWS0FZQ0V2Zkl0NHhua2t6U0EzSm45Y3dEaWZLdWV2NGJQVjBNNgpIcmRsWHc4WVhJWHpjSW9Ob2xnRUhpUllZNlJtTExpOWlnREhZK0cza1k4bFpRMnhYNUlDa3ZlSVZKSnkyOUwzMzFwb0Y4CkVBQUFkSVFnN0Qya0lPdzlvQUFBQUhjM05vTFhKellRQUFBZ0VBeFFKS2xiRlhGVFRrZXB5WDlEajRicit6alNOb0VzbksKbU5nTFVRVUcyR2J4SmszeWo1aWJndmxLa0VBbC81WFA2QmlpZ2s1a01xd2R1TFp6bFBIdXl3ZytveUozZXJCa0k1cG5rVApWU0lsajYxTE0vVTNKZ0NuVG9neUNzZmUrUUtoK1JYb0lwRzltR0pVeTlRZ1ovQUZBcS9zNVZBTUVmeUE5K0FTR25mS3dmCjFJRktaT0Z1OC96L01GQkM5Mk5LREVFUmZPNmd2WVZ1MDVSSW1aazNXRkw0TlJwUlkrMFNPM3pZYTBnaGtVTDJXMFpxVmEKeFpwdVlpbDhCeUh0bGN6NjR3MnN0bWhmeDhSUWZEaEt2L2c1Q3V6cnFaZTlQbEVHbkZrbmcweWNqYityOUkwRjZDSmhBcgpRTHIzL2d6YUppOERKRE90NllNK0JqeUtFZm04OEZIaDZlREpUUGRESWp6bENSM21BeTg2OFRydVRmZkhCVi9sR0xIaWRoCmxMWk1QWVpUdUxqQ2hJSW9oWDdjT0U4NzV5Z2tCa1hicE1vVDB6OHVnd3lFSnNZd0xtMnpvUXpxOU5TMGtwYUhBbWorL3IKRzQ4VEIwWGg0VGxJZ09LQjA2QzZqWDFiV1I3ZTBoZ0I3NUt4ZkZGSzRqMjEvc29CWXQ1RlY2UTlvcmJVeTI1WkRZRHp5dgovZElBM1l3Q0pEODlRUXNMNlVKSFgvMWcrU1IrbW9MaDVPUHZGelhpQUxMSzRGc3gxZDRQVktBWUNFdmZJdDR4bmtrelNBCjNKbjljd0RpZkt1ZXY0YlBWME02SHJkbFh3OFlYSVh6Y0lvTm9sZ0VIaVJZWTZSbUxMaTlpZ0RIWStHM2tZOGxaUTJ4WDUKSUNrdmVJVkpKeTI5TDMzMXBvRjhFQUFBQURBUUFCQUFBQ0FIbzhaTGlpY3d6R1o2a245aVJqSU1uZWlmSmRjSnFQdC9QRAp3S25CZTdEVGxuYVUwSmFHTXA4K1BDUnFtT2tQTkJPbkRWWGFlOUx3OWZRQXlKQTIyRm9EUUpJSnRhWmJRWmJSbThiK0ZYCnNZU0hHbTBmamRzM2RwZUVhOEJDcVRkSmllUTUwbkY0aWZHOXVTMUs3ZHh2a1R4TW1hamlWTXJvSjhFa3R6YlM4dXdRVWkKUDExK2ZsQkd2ck5rYVZpRHM1TU00R1BxejdNbjBrN1c1NERlRHZmdmF1L1A1NFlmdHp0UHlCd3dnaHRXTi9NRUtzQURreApDNkkrYVNVbnlQazBXTXArVnBaTEJucTFkTmJPT3BzSDBhVFV3WmZWZldibjhUa2JIQ2djWmRxUmZZamI0emxYODJjdy9UCnNrRmdDZzY5QnE3MG5jaVFWUENicVhOangvVWh0VHZCK3liSTNOSnpWY3VlaklnNU4vUTM4b200V0VqTTdENitRV09Fb04KalY2K0NLK2Q3emlpeHVSWjliY3VlL2E1ZlJGUlNBazZlSU81cExwMVJia0NqWmxzOFlWWUFDaS83c1ZKU1ROd3NuVWphSwpsSWJpRzF1WlBQL2l0N1lOUk5GeVFPU0dzdVY1WWVhVzNxZ0J1aVZZYnhJSHRoVGpCM1c4NjdGYWdZeGlUME92M251YVlBClNPVG5waFRGM1NPbnJQN0pHWHk2NEpjZ0Nlb3Q5T1R0MHJRcDI4RnNKeGR3NitvaUlSZThQNllscUUrOThXYTVaWnF6ejUKcktGNFZXTzJYemkxUnBvRjdYRUdNQXVCbEFZVmZtOS8wWVhrS1cyYmZQdVJYZlZZK0YxK3pqRzlsR1YreXNHR3J6cG5ocQpmQmR2dEFqWWJIeldqdGRCeU5BQUFCQUJ3WitzU1llOGNUSUxWWmNTZHozdWdtTUtiaGt4SWI2TjdCcmJocElxVmpvWFRDCkhhNDJTMUViTERpajZjM2FyR25Vem4wUW5lNS9Qa3Y0OGNKMFR1TldMbGtjZjF2OThCREhYRXFsTklOUUJvZU9nWUpkaDcKTFIwaVMxZU9SUjZqZDJ1RG1uMFRpWUUySk01VE5NQzU4M0tvTkNpakdlY3U5VmN2bmxZNXZFOHBLL2tFZDZhKzF3V2tkbgpIU01HUTZ3RW8ycmRGYWZqOVhNRmZPVHJUR0VQZzMwdnZGditkcmFidE5ZOXdzMnVBQ0dXbENzZ2FUWDNRNEZITjhpUlpLCkJGVUlSNy94c0x6NDJiT3FOL0IvcDZpWlRIRE8rbklndWlIengrR2JwajdOTExPTTdNRW1ydXo1M0hOSElQaDl0YU1nSmYKL2RBK0I0OVVuUVV2KzBjQUFBRUJBT01vaGg2Y25YVkhFS3o1NlJlenZlK1RPb0tQVTlEQUw2NjdDZHR3MFVxSFB1ZDRFTgpjcGlsYmFabnNxOWwvREdYODRwQlBXcEZ0UkF3Q0NWQkJBdTNINEFoRUJCMDJkR09qNzc2ZjVHbEZ3Nk1zaGZLZGlkd0tMCm8rNG9UQ1JSaENCT3B6amJiWHE0N3dNajYwWFljSlNWU2NuY016UzB4TS9wQUE0c1BZcUdVK1U5MnM1RkFteUhzTHdZdWoKQUhmUnpHQ0k1dXp0cjU2NDNzQXRDc1ZPZk53eWJYdTBBcUZCc1lYaGdIM2VJT2t3eUJDdHprV0lZUXg0ZCtxOGpiMml1Ugo3cFlMaCthUEdscDFDbERxaHBUaGQwa3E5UzhRajVJbmVLNzBxOEhlcjRIK2JBRFA5RnRTRXk5N2FSRm5qT2xDbk9IWHp2ClZZR2g0QUJ4ZDJDbE1BQUFFQkFONEZ6YWdCRFVta0hEQXhDZCs2bjRScVEvVVpzaFNoZXV1SmlqWGFpWHBva3lMSjVHWlUKOW9WbXp6NTlPQ2NQS1hBYWMzbzNweERBalRoOHkvR2xLMll6SFluNlJaUCtqdll5T1JWWEd4aFNaKzFCOU9ZTHphK0o1MApRVllIRmI4TnY1UUU2NHdMQkZVRmM3enorSmk0L0ZJZm8wSDA5M25PamE5ODdlOGtudk9JSytXWTNMbzhqZU51MWFhRGtGCkQ2OFdKUXdSd2dvZTU0OHR1R3h2a2JaS04rWDdtRFNMM2xHaHVmRXFYYndpQlBHRnZqc0tNYXk4Sm8xSmtSUDBxNXRydHQKTXVldWVLZVc2clNXWkF0cWpYelVLbHZIaEFKOElleWpUdjcwV1U2Y29BN0RUZFV2dGdCQlgzTGZoZUkyMTRPaE8xUTZ0dwo3Rkh4VXYxZzJ4c0FBQUFSY205dmRFQTROell5WlRjNU56QXpabUlCQWc9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0K
+  config: SG9zdCAqCiAgIFN0cmljdEhvc3RLZXlDaGVja2luZyBubw==
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: minimalapiservice
+spec:
+  selector:
+    app: minimalapiweb
+  ports:
+  - protocol: TCP
+    port: 8082
+    targetPort: 3000
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minimalapiweb
+  labels:
+    app: minimalapiweb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: minimalapiweb
+  template:
+    metadata:
+      labels:
+        app: minimalapiweb
+    spec:
+      securityContext:
+        fsGroup: 2000
+      volumes:
+      - name: gitlogin
+        secret:
+          secretName: keyforgit
+          defaultMode: 256
+      - name: data
+        emptyDir: {}
+      containers:
+      - name: run
+        image: mcr.microsoft.com/dotnet/aspnet:6.0-alpine
+        imagePullPolicy: IfNotPresent
+        securityContext:
+          runAsUser: 1000
+          runAsGroup: 3000
+        command: ["sh", "-c"]
+        args: 
+        - echo Start 1;
+          ls -R /app;
+          cd /app/out;
+          ./MinimalApiTestHost;
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          periodSeconds: 10
+          initialDelaySeconds: 3
+        volumeMounts:
+        - name: data
+          mountPath: /app
+          readOnly: true
+      # These containers are run during pod initialization
+      initContainers:
+      - name: downloadcode
+        image: bitnami/git:2.34.1
+        imagePullPolicy: IfNotPresent
+        command: ["sh", "-c"]
+        args: 
+        - echo Start1;
+          cp -Rf /keys/ /root/.ssh/;
+          chmod 400 /root/.ssh/id_rsa;
+          chmod 400 /root/.ssh/config;
+          mkdir /app/apptmp/;
+          cd /app/apptmp/;
+          git clone git@github.com:sbraer/k8sdeploy.git;
+        volumeMounts:
+        - name: gitlogin
+          mountPath: /keys
+        - name: data
+          mountPath: /app
+      - name: build
+        image: mcr.microsoft.com/dotnet/sdk:6.0-alpine
+        imagePullPolicy: IfNotPresent
+        securityContext:
+          runAsUser: 0 # to use chmod
+          runAsGroup: 0 #
+        command: ["sh", "-c"]
+        args: 
+        - echo Start1;
+          cd /app/apptmp/;
+          cd k8sdeploy/MinimalApiTestHost/;
+          dotnet build -c Release -o /app/out;
+          cd /app/out;
+          rm -Rf /app/apptmp/;
+        volumeMounts:
+        - name: data
+          mountPath: /app
